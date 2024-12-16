@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Graphik, Arial, Helvetica, sans-serif;
+      }
+      .wrapper {
+        background: #edeff2;
+        table-layout: fixed;
+      }
+      .main {
+        max-width: 600px;
+        width: 100%;
+        background: #fff;
+      }
+
+      .body {
+        padding: 36px;
+      }
+
+      .logo {
+        padding-bottom: 26px;
+      }
+
+      table {
+        border-spacing: 0;
+        width: 100%;
+      }
+      td {
+        padding: 0;
+      }
+      .heading {
+        color: #17191c;
+
+        font-size: 18px;
+
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+        margin-bottom: 8px;
+      }
+      .paragraph {
+        color: #3c4049;
+
+        font-size: 14px;
+
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .content-container {
+        padding-top: 12px;
+      }
+      .content {
+        border-radius: 8px;
+        background: #edeff2;
+        padding: 12px 8px;
+
+        color: #17191c;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(calc(200px - 24px), 1fr)
+        );
+        gap: 24px;
+      }
+      .content-item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+
+        flex: 1;
+        width: 100%;
+      }
+      .content-item-container .title {
+        color: #5c6370;
+
+        font-size: 12px;
+
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+      }
+      .content-item-container .desc {
+        color: #17191c;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      p {
+        margin: 0;
+      }
+      .footer {
+        padding: 30px 0;
+        gap: 8px;
+        background: #f8f8f8;
+        text-align: center;
+      }
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        width: inherit;
+      }
+      .footer-links-container {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+      .footer-paragraph {
+        color: #5c6370;
+        text-align: center;
+
+        font-size: 12px;
+
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.24px;
+      }
+
+      .footer-links-container a {
+        display: inline-block;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+        opacity: 0.8;
+      }
+
+      .footer-links-container a:hover {
+        transform: scale(1.1); /* Slightly enlarge the icon on hover */
+        opacity: 1;
+      }
+
+      .name {
+        font-weight: 500;
+      }
+
+      .get-started-button {
+        display: flex;
+        height: 48px;
+        padding: 0 24px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: #002e63;
+        color: #fff;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        width: fit-content;
+        text-decoration: none;
+        margin-top: 28px;
+      }
+      .divider {
+        height: 1px;
+        width: 100%;
+        background: #edeff2;
+        margin: 36px 0;
+      }
+      .link {
+        color: #00b41a;
+        font-weight: 500;
+        line-height: 24px;
+        text-decoration: none;
+        word-break: break-word; /* Break long words to wrap */
+        overflow-wrap: break-word; /* Ensure wrapping for long words */
+      }
+
+      @media screen and (min-width: 768px) {
+        .get-started-button {
+          margin-top: 48px;
+        }
+        .divider {
+          margin: 56px 0;
+        }
+
+        .body {
+          padding: 56px;
+        }
+
+        .logo {
+          padding-bottom: 56px;
+        }
+
+        .content-container {
+          padding-top: 24px;
+        }
+
+        .footer {
+          padding: 40px 0;
+        }
+        .heading {
+          font-size: 20px;
+          margin-bottom: 16px;
+        }
+        .paragraph {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .content {
+          font-size: 16px;
+          line-height: 24px; /* 150% */
+          padding: 24px 16px;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .footer-links-container {
+          gap: 24px;
+        }
+      }
+
+      @font-face {
+        font-family: "Graphik";
+        src: url("./assets/fonts/Graphik-Medium.woff2") format("woff2"),
+          url("./assets/fonts/Graphik-Medium.woff") format("woff");
+        font-weight: 500;
+
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Graphik";
+        src: url("./assets/fonts/Graphik-Regular.woff2") format("woff2"),
+          url("./assets/fonts/Graphik-Regular.woff") format("woff");
+        font-weight: 400;
+
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main">
+        <!-- body -->
+        <tr>
+          <td class="body">
+            <table>
+              <!-- header -->
+              <tr>
+                <td class="logo">
+                  <a href="#"><img src="./assets/img/logo.svg" alt="" /></a>
+                </td>
+              </tr>
+              <!-- body -->
+              <tr>
+                <td>
+                  <h1 class="heading">
+                    Payment For Verification Report Processing
+                  </h1>
+                  <p class="paragraph">
+                    Hello James Adebayo,<br /><br />
+                    The identity verification form for
+                    <strong class="name">Adebisi Onabajo</strong> has been
+                    successfully filled out. To process the verification report,
+                    please make the payment by clicking the button below.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="content-container">
+                    <tbody class="content">
+                      <!-- Employee name -->
+                      <tr>
+                        <td class="content-item-container">
+                          <p class="title">Employee name</p>
+                          <p class="desc">Adebisi Onabajo</p>
+                        </td>
+                      </tr>
+                      <!-- Verification package -->
+                      <tr>
+                        <td class="content-item-container">
+                          <p class="title">Verification package</p>
+                          <p class="desc">Silver</p>
+                        </td>
+                      </tr>
+                      <!-- Package amount -->
+                      <tr>
+                        <td class="content-item-container">
+                          <p class="title">Package amount</p>
+                          <p class="desc">NGN 25,000</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- Make payment button -->
+              <tr>
+                <td>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="get-started-button"
+                    >Make payment</a
+                  >
+                </td>
+              </tr>
+              <!-- divider -->
+              <tr>
+                <td>
+                  <div class="divider"></div>
+                </td>
+              </tr>
+              <!-- link container -->
+              <tr>
+                <td>
+                  <p class="paragraph" style="padding-bottom: 8px">
+                    If you are having trouble clicking on the button, copy and
+                    paste the URL below into your browser.
+                  </p>
+                  <a
+                    href="https://identigo/invitedtoccivpjfpirjb3485&??/suoredkvs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                  >
+                    https://identigo/invitedtoccivpjfpirjb3485&??/suoredkvs</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- footer -->
+        <tr>
+          <td class="footer">
+            <table style="width: 100%">
+              <!-- social media links -->
+              <tbody class="footer-content">
+                <tr>
+                  <td class="footer-links-container">
+                    <!-- facebook -->
+                    <a href="#"
+                      ><img src="./assets/img/Facebook logo.svg" alt=""
+                    /></a>
+                    <!-- linkedin -->
+                    <a href="#"
+                      ><img src="./assets/img/linkedin logo.svg" alt=""
+                    /></a>
+                    <!-- instagram -->
+                    <a href="#"
+                      ><img src="./assets/img/instagram logo.svg" alt=""
+                    /></a>
+                    <!-- twitter -->
+                    <a href="#"
+                      ><img src="./assets/img/Twitter logo.svg" alt=""
+                    /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="footer-paragraph">
+                      Copyright (c) 2023 Identigo. All rights reserved.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
