@@ -5,164 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        margin: 0;
-        font-family: Graphik, Arial, Helvetica, sans-serif;
-      }
-      .wrapper {
-        background: #edeff2;
-        table-layout: fixed;
-      }
-      .main {
-        max-width: 600px;
-        width: 100%;
-        background: #fff;
-      }
-
-      .body {
-        padding: 36px;
-      }
-
-      .logo {
-        padding-bottom: 26px;
-      }
-
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 0;
-      }
-      .heading {
-        color: #17191c;
-
-        font-size: 18px;
-
-        font-weight: 500;
-        line-height: 24px;
-        margin: 0;
-        margin-bottom: 8px;
-      }
-      .paragraph {
-        color: #3c4049;
-
-        font-size: 14px;
-
-        font-weight: 400;
-        line-height: 20px;
-      }
-
-      p {
-        margin: 0;
-      }
-      .footer {
-        padding: 30px 0;
-        gap: 8px;
-        background: #f8f8f8;
-        text-align: center;
-      }
-      .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        align-self: stretch;
-        width: inherit;
-      }
-      .footer-links-container {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-      }
-      .footer-paragraph {
-        color: #5c6370;
-        text-align: center;
-
-        font-size: 12px;
-
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0.24px;
-      }
-
-      .footer-links-container a {
-        display: inline-block;
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
-        opacity: 0.8;
-      }
-
-      .footer-links-container a:hover {
-        transform: scale(1.1); /* Slightly enlarge the icon on hover */
-        opacity: 1;
-      }
-
-      .get-started-button {
-        display: flex;
-        height: 48px;
-        padding: 0 24px;
-        align-items: center;
-        gap: 8px;
-        border-radius: 4px;
-        background: #002e63;
-        color: #fff;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.32px;
-        width: fit-content;
-        text-decoration: none;
-        margin-top: 28px;
-      }
-      .divider {
-        height: 1px;
-        width: 100%;
-        background: #edeff2;
-        margin: 36px 0;
-      }
-      .link {
-        color: #00b41a;
-        font-weight: 500;
-        line-height: 24px;
-        text-decoration: none;
-        word-break: break-word; /* Break long words to wrap */
-        overflow-wrap: break-word; /* Ensure wrapping for long words */
-      }
-
-      @media screen and (min-width: 768px) {
-        .get-started-button {
-          margin-top: 48px;
-        }
-        .divider {
-          margin: 56px 0;
-        }
-        .body {
-          padding: 56px;
-        }
-
-        .logo {
-          padding-bottom: 56px;
-        }
-
-        .content-container {
-          padding: 24px 0;
-        }
-
-        .footer {
-          padding: 40px 0;
-        }
-        .heading {
-          font-size: 20px;
-          margin-bottom: 16px;
-        }
-        .paragraph {
-          font-size: 16px;
-          line-height: 24px;
-        }
-
-        .footer-links-container {
-          gap: 24px;
-        }
-      }
-
       @font-face {
         font-family: "Graphik";
         src: url("./assets/fonts/Graphik-Medium.woff2") format("woff2"),
@@ -174,39 +16,56 @@
 
       @font-face {
         font-family: "Graphik";
-        src: url("./assets/fonts/Graphik-Regular.woff2") format("woff2"),
-          url("./assets/fonts/Graphik-Regular.woff") format("woff");
+        src: url("../assets/fonts/Graphik-Regular.woff2") format("woff2"),
+          url("../assets/fonts/Graphik-Regular.woff") format("woff");
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
     </style>
   </head>
-  <body>
-    <center class="wrapper">
-      <table class="main">
+  <body style="margin: 0; font-family: Graphik, Arial, Helvetica, sans-serif">
+    <center style="background: #edeff2; width: 100%">
+      <table style="max-width: 600px; width: 100%; background: #fff">
         <!-- body -->
         <tr>
-          <td class="body">
-            <table>
+          <td style="padding: 36px">
+            <table style="width: 100%; border-spacing: 0">
               <!-- header -->
               <tr>
-                <td class="logo">
-                  <a href="#"
-                    ><img
+                <td style="padding-bottom: 26px">
+                  <a href="#">
+                    <img
                       src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/logo.svg?raw=true"
                       alt=""
-                  /></a>
+                    />
+                  </a>
                 </td>
               </tr>
               <!-- body -->
               <tr>
                 <td>
-                  <h1 class="heading">Fill Verification Form?</h1>
-                  <p class="paragraph">
-                    Hello James Adebayo,
-                    <br />
-                    <br />
+                  <h1
+                    style="
+                      color: #17191c;
+                      font-size: 18px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      margin: 0 0 8px;
+                    "
+                  >
+                    Fill Verification Form?
+                  </h1>
+                  <p
+                    style="
+                      color: #3c4049;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      margin: 0;
+                    "
+                  >
+                    Hello James Adebayo,<br /><br />
                     Your employer would like to verify your information. Click
                     get started to fill the form we’ve prepared for you. Ensure
                     to submit accurate details.
@@ -220,21 +79,53 @@
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="get-started-button"
-                    >Get started</a
+                    style="
+                      display: flex;
+                      height: 48px;
+                      padding: 0 24px;
+                      align-items: center;
+                      gap: 8px;
+                      border-radius: 4px;
+                      background: #002e63;
+                      color: #fff;
+                      font-weight: 500;
+                      line-height: 24px;
+                      letter-spacing: 0.32px;
+                      width: fit-content;
+                      text-decoration: none;
+                      margin-top: 28px;
+                    "
                   >
+                    Get started
+                  </a>
                 </td>
               </tr>
               <!-- divider -->
               <tr>
                 <td>
-                  <div class="divider"></div>
+                  <div
+                    style="
+                      height: 1px;
+                      width: 100%;
+                      background: #edeff2;
+                      margin: 36px 0;
+                    "
+                  ></div>
                 </td>
               </tr>
               <!-- link container -->
               <tr>
                 <td>
-                  <p class="paragraph" style="padding-bottom: 8px">
+                  <p
+                    style="
+                      color: #3c4049;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      margin: 0;
+                      padding-bottom: 8px;
+                    "
+                  >
                     If you are having trouble clicking on the button, copy and
                     paste the URL below into your browser.
                   </p>
@@ -242,10 +133,17 @@
                     href="https://identigo/invitedtoccivpjfpirjb3485&??/suoredkvs"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="link"
+                    style="
+                      color: #00b41a;
+                      font-weight: 500;
+                      line-height: 24px;
+                      text-decoration: none;
+                      word-break: break-word;
+                      overflow-wrap: break-word;
+                    "
                   >
-                    https://identigo/invitedtoccivpjfpirjb3485&??/suoredkvs</a
-                  >
+                    https://identigo/invitedtoccivpjfpirjb3485&??/suoredkvs
+                  </a>
                 </td>
               </tr>
             </table>
@@ -253,41 +151,69 @@
         </tr>
         <!-- footer -->
         <tr>
-          <td class="footer">
+          <td
+            style="
+              padding: 30px 0;
+              gap: 8px;
+              background: #f8f8f8;
+              text-align: center;
+            "
+          >
             <table style="width: 100%">
               <!-- social media links -->
-              <tbody class="footer-content">
+              <tbody
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 8px;
+                  width: 100%;
+                "
+              >
                 <tr>
-                  <td class="footer-links-container">
+                  <td style="display: flex; gap: 16px; justify-content: center">
                     <!-- facebook -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/Facebook%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- linkedin -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/Twitter%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- instagram -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/instagram%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- twitter -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/linkedin%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <p class="footer-paragraph">
+                    <p
+                      style="
+                        color: #5c6370;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0.24px;
+                        margin: 0;
+                      "
+                    >
                       Copyright (c) 2023 Identigo. All rights reserved.
                     </p>
                   </td>

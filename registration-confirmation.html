@@ -5,152 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        margin: 0;
-        font-family: Graphik, Arial, Helvetica, sans-serif;
-      }
-      .wrapper {
-        background: #edeff2;
-        table-layout: fixed;
-      }
-      .main {
-        max-width: 600px;
-        width: 100%;
-        background: #fff;
-      }
-
-      .body {
-        padding: 36px;
-      }
-
-      .logo {
-        padding-bottom: 26px;
-      }
-
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 0;
-      }
-      .heading {
-        color: #17191c;
-
-        font-size: 18px;
-
-        font-weight: 500;
-        line-height: 24px;
-        margin: 0;
-        margin-bottom: 8px;
-      }
-      .paragraph {
-        color: #3c4049;
-
-        font-size: 14px;
-
-        font-weight: 400;
-        line-height: 20px;
-      }
-      .content-container {
-        padding: 12px 0;
-      }
-      .content {
-        border-radius: 8px;
-        background: #edeff2;
-        padding: 12px;
-
-        color: #17191c;
-
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px; /* 150% */
-      }
-      p {
-        margin: 0;
-      }
-      .footer {
-        padding: 30px 0;
-        gap: 8px;
-        background: #f8f8f8;
-        text-align: center;
-      }
-      .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        align-self: stretch;
-        width: inherit;
-      }
-      .footer-links-container {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-      }
-      .footer-paragraph {
-        color: #5c6370;
-        text-align: center;
-
-        font-size: 12px;
-
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0.24px;
-      }
-
-      .footer-links-container a {
-        display: inline-block;
-        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
-        opacity: 0.8;
-      }
-
-      .footer-links-container a:hover {
-        transform: scale(1.1); /* Slightly enlarge the icon on hover */
-        opacity: 1;
-      }
-
-      @media screen and (min-width: 768px) {
-        .body {
-          padding: 56px;
-        }
-
-        .logo {
-          padding-bottom: 56px;
-        }
-
-        .content-container {
-          padding: 24px 0;
-        }
-
-        .footer {
-          padding: 40px 0;
-        }
-        .heading {
-          font-size: 20px;
-          margin-bottom: 16px;
-        }
-        .paragraph {
-          font-size: 16px;
-          line-height: 24px;
-        }
-        .content {
-          font-size: 16px;
-          line-height: 24px; /* 150% */
-          padding: 16px;
-        }
-
-        .footer-links-container {
-          gap: 24px;
-        }
-      }
-
       @font-face {
         font-family: "Graphik";
         src: url("./assets/fonts/Graphik-Medium.woff2") format("woff2"),
           url("./assets/fonts/Graphik-Medium.woff") format("woff");
         font-weight: 500;
-
+        font-style: normal;
         font-display: swap;
       }
 
@@ -159,46 +19,86 @@
         src: url("./assets/fonts/Graphik-Regular.woff2") format("woff2"),
           url("./assets/fonts/Graphik-Regular.woff") format("woff");
         font-weight: 400;
-
+        font-style: normal;
         font-display: swap;
       }
     </style>
   </head>
-  <body>
-    <center class="wrapper">
-      <table class="main">
+  <body style="margin: 0; font-family: Graphik, Arial, Helvetica, sans-serif">
+    <center style="background: #edeff2; width: 100%">
+      <table style="max-width: 600px; width: 100%; background: #fff">
         <!-- body -->
         <tr>
-          <td class="body">
-            <table>
+          <td style="padding: 36px">
+            <table style="width: 100%; border-spacing: 0">
               <!-- header -->
               <tr>
-                <td class="logo">
-                  <a href="#"
-                    ><img
+                <td style="padding-bottom: 26px">
+                  <a href="#">
+                    <img
                       src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/logo.svg?raw=true"
                       alt=""
-                  /></a>
+                    />
+                  </a>
                 </td>
               </tr>
               <!-- body -->
               <tr>
                 <td>
-                  <h1 class="heading">Welcome To Identigo.</h1>
-                  <p class="paragraph">
+                  <h1
+                    style="
+                      color: #17191c;
+                      font-size: 18px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      margin: 0 0 8px;
+                    "
+                  >
+                    Welcome To Identigo.
+                  </h1>
+                  <p
+                    style="
+                      color: #3c4049;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      margin: 0;
+                    "
+                  >
                     We received a request to create your account. Please enter
                     this verification code to complete your account registration
                   </p>
                 </td>
               </tr>
               <tr>
-                <td class="content-container">
-                  <p class="content">691448</p>
+                <td style="padding: 12px 0">
+                  <p
+                    style="
+                      border-radius: 8px;
+                      background: #edeff2;
+                      padding: 12px;
+                      color: #17191c;
+                      font-size: 14px;
+                      font-weight: 500;
+                      line-height: 24px;
+                      margin: 0;
+                    "
+                  >
+                    691448
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p class="paragraph">
+                  <p
+                    style="
+                      color: #3c4049;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      margin: 0;
+                    "
+                  >
                     We received a request to create your account. Please enter
                     this verification code to complete your account registration
                   </p>
@@ -209,41 +109,69 @@
         </tr>
         <!-- footer -->
         <tr>
-          <td class="footer">
+          <td
+            style="
+              padding: 30px 0;
+              gap: 8px;
+              background: #f8f8f8;
+              text-align: center;
+            "
+          >
             <table style="width: 100%">
               <!-- social media links -->
-              <tbody class="footer-content">
+              <tbody
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 8px;
+                  width: 100%;
+                "
+              >
                 <tr>
-                  <td class="footer-links-container">
+                  <td style="display: flex; gap: 16px; justify-content: center">
                     <!-- facebook -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/Facebook%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- linkedin -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/Twitter%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- instagram -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/instagram%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                     <!-- twitter -->
-                    <a href="#"
-                      ><img
+                    <a href="#">
+                      <img
                         src="https://github.com/TOLU-MICH/email-template/blob/main/assets/img/linkedin%20logo.svg?raw=true"
                         alt=""
-                    /></a>
+                      />
+                    </a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <p class="footer-paragraph">
+                    <p
+                      style="
+                        color: #5c6370;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0.24px;
+                        margin: 0;
+                      "
+                    >
                       Copyright (c) 2023 Identigo. All rights reserved.
                     </p>
                   </td>
